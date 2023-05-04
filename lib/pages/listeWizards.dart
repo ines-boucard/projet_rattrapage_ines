@@ -42,6 +42,7 @@ class _ListWizardStatePage extends State<ListWizardPage>{
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(snapshot.data![1].firstName),
+                  Text(snapshot.data![1].lastName),
                 ],
               );
             }

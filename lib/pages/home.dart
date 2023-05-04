@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        title: Text("testttttttttt"),
+        title: Text("Home"),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
@@ -38,12 +38,18 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
+              'Bienvenu',
             ),
             TextButton(
                 onPressed: () => GoRouter.of(context).go('listeWizard'),
                 child: Text(
-                  "Avis (voir plus d'avis)",
+                  "Liste de Wizards",
+                  style: Theme.of(context).textTheme.headline6,
+                )),
+            TextButton(
+                onPressed: () => GoRouter.of(context).go('listeElixirs'),
+                child: Text(
+                  "Liste d'Elixirs",
                   style: Theme.of(context).textTheme.headline6,
                 )),
           ],

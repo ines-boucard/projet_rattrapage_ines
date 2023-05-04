@@ -11,6 +11,7 @@ void main() {
 }
 class MyApp extends StatelessWidget {
   MyApp({super.key});
+  // J'ai essayer de faire le GoRouteur dans un fichier apart puis ici mais ça n'est pas totalement fonctionnel
   final GoRouter _router = GoRouter(
       initialLocation: '/',
       routes: <GoRoute>[
